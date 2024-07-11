@@ -20,7 +20,7 @@ def dataset(n):
 def main():
     N = 50
     filterSignal = np.array([2, 10, 11, 12, 18, 20, 41, 42, 43, 45, 46, 47, 48, 49, 51, 52, 53, 55, 56, 57, 58, 59, 64, 66, 67, 69, 71, 72, 74, 75, 83, 87, 88, 93, 94, 95, 98, 106])
-    X_train = np.array([dataset(i) for i in range(1,N+1)])[:,270:,filterSignal+1]
+    X_train = np.array([dataset(i) for i in range(1,N+1)])[:,270:500,filterSignal+1]
 
     seed = 0
     np.random.seed(seed)
